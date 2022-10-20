@@ -15,6 +15,27 @@ Introduïu puntuació: 7.5 -> Bé
 Introduïu puntuació: 0.5 -> Insuficient
 '''
 
+nota = float(input("Digues una puntuació entre 0 i 10: "))
+try:
+    if (nota >10 or nota < 0):
+        print("Fora del rang")
+    elif (nota >= 9):
+        print("Exel·lent")
+    elif (nota >= 8):
+        print("Notable")
+    elif (nota >= 7):
+        print("Bé")
+    elif (nota >= 5):
+        print("Suficient")
+    elif (nota < 5):
+        print("Insuficient")
+    else:
+        print("Puntiació incorrecta")
+except ValueError:
+    print("Puntiació incorrecta")
+
+
+'''
 nota = input("Digues una puntuació entre 0 i 10: ")
 
 if (float(nota) >10 or float(nota) < 0):
@@ -30,8 +51,8 @@ elif (float(nota) >= 5):
 elif (float(nota) < 5):
     print("Insuficient")
 else:
-    ("Puntiació incorrecta")
-
+    print("Puntiació incorrecta")
+'''
 '''
 Tasca 2:
 Escriu un programa que demani l'any actual i un altre any qualsevol. El resultat ha de mostrar quants anys han passat des de l'any introduït o quants anys falten.
